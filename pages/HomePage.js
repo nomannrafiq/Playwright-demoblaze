@@ -8,7 +8,7 @@ exports.HomePage = class HomePage {
     }
 
     async addProductToCart (productName) {
-        const productList = await this.page$$(this.productList);
+        const productList = await this.page.$$(this.productList);
         for (const product of productList) {
             if (productName === product.textContent()){
                 await product.click()
