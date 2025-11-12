@@ -2,14 +2,14 @@ exports.LoginPage =
 class LoginPage {
     constructor(page){
         this.page = page;
-        this.loginLink = "#login2"
+        this.loginLink = "#login2";
         this.usernameInput = '#loginusername';
         this.passwordInput = '#loginpassword';
         this.loginButton = '//button[normalize-space()="Log in"]';
     }
 
     async gotoLoginPage(){
-        await this.page.goto('https://www.demoblaze.com/index/html');
+        await this.page.goto('https://www.demoblaze.com/');
 
     }
 
